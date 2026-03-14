@@ -4,20 +4,12 @@
  */
 public class EstudianteRegular extends Estudiante {
 
-    /**
-     * Constructor de EstudianteRegular.
-     * @param nombre Nombre del estudiante.
-     * @param edad   Edad del estudiante.
-     * @param nota   Calificación entre 0.0 y 10.0.
-     */
+    // Constructor de EstudianteRegular.
     public EstudianteRegular(String nombre, int edad, double nota) {
         super(nombre, edad, nota);
     }
 
-    /**
-     * Retorna el tipo de estudiante como "Regular".
-     * @return Cadena "Regular".
-     */
+    // Sobrescribe el método obtenerTipo para indicar que es un estudiante regular.
     @Override
     public String obtenerTipo() {
         return "Regular";
